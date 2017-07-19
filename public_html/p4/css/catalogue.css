@@ -1,0 +1,102 @@
+
+div .row{
+   background: #fff;
+}
+
+h1{
+   text-align: center;
+   display: block;
+   height: 100px;
+   background-image: url(../img/bg2.jpg);
+}
+h3{
+   color: #BC2C79;
+   font-size: 30px;
+
+}
+#title{
+   color: #000;
+   font-family: 'Kaushan Script', cursive;
+   font-size: 30px;
+
+}
+
+.line{
+   width: 100%;
+   margin: 0 0 30px 0;
+   padding:0;
+}
+
+#colorb, #colorb2, #colorb3, #colorb4, #colorb5, #colorb6, #colorb7, #colorb8, #colorb9 {
+   background: #BC2C79;
+   border: 3px solid #000;
+   box-sizing: border-box;
+
+}
+
+#numbers li a{
+   color: #BC2C79;
+   border: 3px solid #000;
+   font-size: 18px;
+}
+#catalogue1{
+   background:#BC2C79;
+}
+#catalogue2{
+   background:#BC2C79;
+}
+/*modal--------------------------------------------------------------------------*/
+.modal{
+   display: none;
+}
+.modal:target{
+   display: block;
+   position: fixed;
+   background: rgba(0,0,0,0.8);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 
+      100%;
+}
+.modal h3{
+   color: #fff;
+   font-size: 15px;
+   font-family: arial;
+   text-align: center;
+   margin: 15px 30%;
+}
+.imagen{
+   width: 100%;
+   height: 50%;
+   display:  flex;
+   justify-content: center;
+   align-items: center;
+}
+.imagen img{
+   width: 700px;
+   height: 300px;
+   max-width: 100%;
+   border: 7px solid #BC2C79;
+}
+.imagen div{   /* contenedor de la imagen*/
+   height: 100%;
+}
+
+.cerrar{
+   display: block;
+   background: #fff;
+   width: 40px;
+   height: 40px;
+   margin: auto;
+   margin-bottom: 20px;
+   margin-top: 5%;
+   text-align: center;
+   text-decoration: none;
+   font-size: 30px;
+   color: #000;
+   padding: 5px;
+   border-radius: 50%;
+   line-height: 25px;
+   font-family: arial;
+}

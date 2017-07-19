@@ -1,0 +1,281 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.menu{
+   background: #BC2C79;
+   display: flex;
+}
+.logo{
+   flex-grow: 1;
+   display: flex;
+}
+.logo p{
+   font-family: 'Kaushan Script', cursive;
+   font-size: 45px;
+   color: #000;
+}
+.logo img{
+   width: 50px;
+   height: 50px;
+   padding-left: 10px;
+   background: #fff;
+   border-radius: 70%;
+}
+.enlaces{
+   display: flex;
+   flex-grow: 1;
+   flex:1;
+}
+.enlaces div{
+   flex:1;
+   text-align: center;
+   padding: 0px 0px;
+   border-radius: 100px;
+   margin: 5px;
+   padding: 2px;
+}
+.enlaces div a{
+   text-decoration: none;
+   font-size: 40px;
+   font-family: 'Bilbo Swash Caps', cursive;
+   /*padding: 10px 0px;*/
+   display: block;
+   color: #fff;
+}
+
+.enlaces div:hover{
+   background: #610B3A;
+}
+.enlaces div:focus{
+   background: #610B3A;/* no esta haciendo nada*/
+}
+
+.helado{
+   background-image:url(../img/menu.png);
+   background-repeat:repeat-x;
+   width: 100%;
+   height: 80px;
+}
+@media (min-width: 470px) and (max-width: 2000px){
+
+header{
+   position: fixed;
+   width: 100%;
+   margin-top: 0;
+   z-index: 100;
+}
+}
+@media (min-width: 100px) and (max-width: 448px){
+   .menu{ 
+      display: flex;
+      flex-direction: column;
+   }
+   .enlaces{
+      flex-wrap: wrap;
+   }
+   .header{
+      position: static; }
+}
+
+@media (min-width: 448px) and (max-width: 791px){
+   .menu{
+      flex-direction: column;
+   }
+   .enlaces{
+      flex-direction: row;
+   }
+}
+/* Parrafos---------------------------------------------------------------*/
+
+.informacion{
+   display: flex;
+   flex-direction: column;
+   /*background:blue;*/
+}
+.parrafoUno{
+   background: #F4ECF7;
+   border-radius: 30px;
+   margin-bottom: 5px;
+   margin-top: 20%;
+   display: flex;
+}
+.historia{
+  /* border: 3px solid #000;*/
+   background: #F4ECF7;
+   border-radius: 30px;
+}
+.historia p{
+   font-family: arial;
+   font-weight: bold;
+   font-size: 20px;
+   margin: 10%;
+   background: #fff;
+}
+.fotosHistoria{
+  display: flex;
+  flex-direction: column;
+}
+.fotosHistoria div img{
+   border: 3px solid #610B3A;
+}
+.parrafoDos{
+   background: #F4ECF7;
+   flex-grow: 1;
+   margin-top: 10%;
+}
+.quienesSomos{
+   border: 10px solid #610B3A;
+   margin-top: 5%;
+}
+.quienesSomos img{
+   width: 100%;
+}
+
+div section h1{
+   background:#BC2C79;
+   margin: 20px;
+   border-radius: 400px 10px 400px 10px;
+   font-family: 'Bilbo Swash Caps', cursive;
+   font-size: 40px;
+   color: #fff;
+   text-align: center;
+   box-shadow: 0px 3px 5px #000;
+}
+
+article h3{
+      font-family: 'Kaushan Script', cursive;
+      font-size: 30px;
+}
+
+article p{
+   font-family: arial;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+article{
+   background: #fff;
+   margin: 10%;
+   line-height: 30px;
+
+}
+@media (min-width: 100px) and (max-width: 820px){
+   .parrafoUno{
+      margin-top: 40%;
+   }
+   .fotosHistoria{
+      display: none;
+   }
+   
+}
+@media (min-width: 820px) and (max-width: 1090px){
+   .fotosHistoria{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .fotoh:nth-child(3){
+      display: none;
+   }
+   .centrar{
+      margin: auto;
+   }
+   .parrafoUno{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   
+}
+/*----------------------------------------------------------------------------------------------*/
+.contenedorcuerpo{
+   background: salmon;
+   display: flex;
+   flex-direction: row-reverse;
+   margin-top: 10%;
+}
+@media (min-width: 593px) and (max-width: 854px){
+   .contenedorcuerpo{
+      margin-top: 0px;
+      flex-direction: column;
+      background: url(../img/galletita.jpg);
+   }
+   .contenedorImg{
+      flex-direction: row;
+      flex-grow: 1;
+      margin-top: 40%;
+      margin-left: 0px;
+      margin-bottom: 10%;
+   }
+   .contenedorImg img{
+      width: 80%;
+   }
+}
+@media (min-width: 100px) and (max-width: 593px){
+   .contenedorImg{
+      display: none;
+   }
+   .contenedorcuerpo{
+      margin-top: 0px;
+   }
+   .parrafoUno{
+      margin-top: 50%;
+   }
+   .enlaces{
+      display: none;
+   }
+   
+   .logo div img:hover{ /* no se como organizar esta pendejada para que me de llamar al kevin*/
+      
+   }
+   /* estetico*/
+   div section h1{
+      border-radius: 20px;
+   }
+}
+
+
+/*Footer---------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+   background:#BC2C79;
+   box-shadow: 0px 3px 5px #000;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   margin-top: 10%;
+}
+
+footer h5{
+   font-family: 'Bilbo Swash Caps', cursive;
+   font-size: 20px;
+   color: #fff;
+   text-align: center;
+}
+
+/*Estructura------------------------------------------------------------------------------------------------------------------------*/
+
+.estructura{
+   /*background: #FFE0A3; cambiar para el fondo global*/
+   margin-bottom: 10%;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 0%;
+}
+@media (min-width: 100px) and (max-width: 593px){
+   .estructura{
+      margin-left: 0;
+      margin-right: 0;
+   }
+}
+
+body{
+   background-image: url(../img/bg.jpg);
+   background-attachment: fixed;
+   background-size: 500px ;
+}
+
+
+

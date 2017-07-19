@@ -1,0 +1,271 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.menu{
+   background: #BC2C79;
+   display: flex;
+}
+.logo{
+   flex-grow: 1;
+   display: flex;
+}
+.logo p{
+   font-family: 'Kaushan Script', cursive;
+   font-size: 45px;
+   color: #000;
+}
+.logo img{
+   width: 50px;
+   height: 50px;
+   padding-left: 10px;
+   background: #fff;
+   border-radius: 70%;
+}
+.enlaces{
+   display: flex;
+   flex-grow: 1;
+   flex:1;
+}
+.enlaces div{
+   flex:1;
+   text-align: center;
+   padding: 0px 0px;
+   border-radius: 100px;
+   margin: 5px;
+   padding: 2px;
+}
+.enlaces div a{
+   text-decoration: none;
+   font-size: 40px;
+   font-family: 'Bilbo Swash Caps', cursive;
+   /*padding: 10px 0px;*/
+   display: block;
+   color: #fff;
+}
+.enlaces div:hover{
+   background: #610B3A;
+}
+.enlaces div:focus{
+   background: #610B3A;/* no esta haciendo nada*/
+}
+.helado{
+   background-image:url(../img/menu.png);
+   background-repeat:repeat-x;
+   width: 100%;
+   height: 80px;
+}
+@media (min-width: 470px) and (max-width: 2000px){
+
+header{
+   position: fixed;
+   width: 100%;
+   margin-top: 0;
+   z-index: 100;
+}
+}
+@media (min-width: 100px) and (max-width: 448px){
+   .menu{ 
+      display: flex;
+      flex-direction: column;
+   }
+   .enlaces{
+      flex-wrap: wrap;
+   }
+   .header{
+      position: static; }
+}
+
+@media (min-width: 448px) and (max-width: 791px){
+   .menu{
+      flex-direction: column;
+   }
+   .enlaces{
+      flex-direction: row;
+   }
+}
+/* formularios------------------------------------------------------------------------------*/
+
+.parrafoUno{
+   margin-top: 0%;
+  /* background: gold;*/
+}
+.informacion{
+   padding-top: 20%;
+   display: flex;
+   flex-direction: column;
+   /*background:red;*/
+}
+.formulario{
+   background-image: url(../img/cookie.jpg);
+   margin-bottom: 5px;
+   margin-top: 20%;
+   margin: auto;
+   display: flex;
+   border-radius: 20px;
+   justify-content: center;
+}
+.registrate{
+   background: #BC2C79;
+   width: 50%;
+   padding: 10px 20px;
+   margin: auto;
+   margin-top: 10%;
+   border-radius: 30px;
+}
+.mensaje{
+   background: #BC2C79;
+   width: 50%;
+   padding: 10px 20px;
+   margin: auto;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   border-radius: 30px;
+}
+#boton{
+   background: #FF98B6;
+   color: #000;
+   font-size: 30px;
+   font-family: 'Kaushan Script', cursive;
+}
+#boton:hover{
+   cursor: pointer;
+   background-color:  rgba(255, 91, 91, 0.5);
+}
+input, textArea{
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 7px;
+   font-size: 17px;
+   border: none;
+}
+textArea{
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+}
+form div h2{
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+   font-family: cursive;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+div section h1{
+   background:#BC2C79;
+   margin: 20px;
+   margin-bottom: 10%;
+   border-radius: 400px 10px 400px 10px;
+   font-family: 'Bilbo Swash Caps', cursive;
+   font-size: 40px;
+   color: #fff;
+   text-align: center;
+   box-shadow: 0px 3px 5px #000;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*
+@media (min-width: 593px) and (max-width: 854px){
+  
+}
+@media (min-width: 100px) and (max-width: 593px){
+   .parrafoUno{
+      margin-top: 50%;
+   }
+   .enlaces{
+      display: none;
+   }
+   
+   .logo div img:hover{ /* no se como organizar esta pendejada para que me de llamar al kevin
+   }
+   div section h1{
+      border-radius: 20px;
+   }
+}
+*/
+
+/*social bar----------------------------------------------------------------------------------------------------------------------------------*/
+.barraSocial{
+   margin-top: 10%;
+}
+.sociales{
+   /*background: activecaption;*/
+   display: flex;
+   justify-content: space-between;
+   margin: 10% 30%;
+   
+}
+.sociales div a{
+   text-decoration: none;
+   font-size: 50px;
+   color: #fff;
+   margin: 30px;
+   display: block;
+}
+.facebook{background:#BC2C79; border-radius: 50%;}
+.facebook:hover{background:#3b5998; border-radius: 50%;}
+.whatsapp{background:#BC2C79; border-radius: 50%;}
+.whatsapp:hover{background:#5DCD4E; border-radius: 50%;}
+.google{background:#BC2C79; border-radius: 50%;}
+.google:hover{background:#d95232; border-radius: 50%;}
+
+@media (min-width: 417px) and (max-width: 934px){
+   .sociales{
+      margin: 10% 0%;
+   }
+}
+@media (min-width: 100px) and (max-width: 416px){
+   .sociales{
+      display: none;
+   }
+   #none{
+      display: none;
+   }
+   
+}
+@media (min-width: 300px) and (max-width: 800px){
+   div .mensaje{
+      width: 312px;
+   }
+   div .registrate{
+      width: 312px;
+   }
+   .formulario{
+      background: none;
+   }
+}
+/*Footer---------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+   background:#BC2C79;
+   box-shadow: 0px 3px 5px #000;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   margin-top: 1%;
+}
+
+footer h5{
+   font-family: 'Bilbo Swash Caps', cursive;
+   font-size: 20px;
+   color: #fff;
+   text-align: center;
+}
+
+/*Estructura------------------------------------------------------------------------------------------------------------------------*/
+
+.estructura{
+   /*background: #FFE0A3; cambiar para el fondo global*/
+   margin-bottom: 10%;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 0%;
+}
+
+body{
+   background-image: url(../img/bg.jpg);
+   background-attachment: fixed;
+   background-size: 500px ;
+}
+

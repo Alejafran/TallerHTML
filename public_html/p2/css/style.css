@@ -1,0 +1,37 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h1{
+   text-align: center;
+   margin-top: 30px;
+}
+
+div img{
+   margin: auto;
+   border: 3px solid #000;
+   margin-top: 5%;
+}
+
+div .panel-body{
+   margin: 0% 20%;
+}
+
+p{
+   text-align: center;
+   border: 2px solid #000;
+   line-height: 30px;
+}
+
+p strong{
+   font-size: 20px;
+}
+
+@media (min-width: 100px) and (max-width: 1260px){
+
+   div .panel-body{
+      margin: auto;
+   }
+}
